@@ -13,10 +13,10 @@ export default async function Blog () {
   const blog = await client.getSingle("blog");
   
   return (
-    <div className="mb-5">
-    <div className="relative mx-40 mt-10 text-balance text-center text-5xl font-medium md:text-7xl">
-    <div className="xl:ml-[272px] glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-accent/15 blur-3xl filter" />
+    <div className="mt-12 xl:mb-5 text-center">
+    <div className="xl:mx-[430px] lg:mx-[430px] glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-accent/15 blur-3xl filter" />
     <PageTransition><Heading as="h1">{blog.data.title}</Heading></PageTransition>
+    <div className="mb-12 text-white text-left relative mx-40 mt-10 text-balance text-5xl font-medium md:text-7xl">
 
     </div>
 
