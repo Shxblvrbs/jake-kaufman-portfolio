@@ -1,0 +1,79 @@
+{
+  "format": "custom",
+  "id": "homepage",
+  "label": "Homepage",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "greeting_top": {
+        "type": "Text",
+        "config": {
+          "label": "Greeting Top",
+          "placeholder": ""
+        }
+      },
+      "greeting_bottom": {
+        "type": "Text",
+        "config": {
+          "label": "Greeting Bottom",
+          "placeholder": ""
+        }
+      },
+      "mission_statement": {
+        "type": "Text",
+        "config": {
+          "label": "Mission Statement",
+          "placeholder": ""
+        }
+      },
+      "resume_link": {
+        "type": "Link",
+        "config": {
+          "label": "Resume Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "avatar": {
+        "type": "Image",
+        "config": {
+          "label": "Avatar",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    },
+    "SEO and Metadata": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Title",
+          "placeholder": ""
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      },
+      "og_image": {
+        "type": "Image",
+        "config": {
+          "label": "OG Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}
