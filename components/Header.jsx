@@ -67,8 +67,8 @@ export default async function Header(){
         {/* desktop nav & hire me button */}
         <div className="hidden xl:flex items-center gap-8">
           {settings.data.nav_item.map(({ link, label }, index) => (
-            <ul>
-              <li key={index} className={`${"hover:text-accent hover:border-b-2 hover:border-accent transition-colors"} capitalize font-medium hover:text-accent transition-all`}>
+            <ul key={index}>
+              <li className={`${"hover:text-accent hover:border-b-2 hover:border-accent transition-colors"} capitalize font-medium hover:text-accent transition-all`}>
                 <PrismicNextLink field={link}>{label}</PrismicNextLink>
               </li>
             </ul>
@@ -102,8 +102,8 @@ export default async function Header(){
             {/* nav */}
             <div className="flex flex-col justify-center items-center gap-8">
               {settings.data.nav_item.map(({ link, label}, index) => (
-                <ul> 
-                  <li key={index} className={`${"hover:text-accent hover:border-b-2 hover:border-accent transition-transform"} capitalize font-medium hover:text-accent transition-all`}>
+                <ul key={index}> 
+                  <li className={`${"hover:text-accent hover:border-b-2 hover:border-accent transition-transform"} capitalize font-medium hover:text-accent transition-all`}>
                     <PrismicNextLink field={link}><SheetPrimitive.Close>{label}</SheetPrimitive.Close></PrismicNextLink>
                   </li>
                   

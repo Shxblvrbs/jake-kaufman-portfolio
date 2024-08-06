@@ -25,12 +25,12 @@ export default async function Blog () {
     <div className="prose prose-lg prose-invert w-full max-w-none">
     {blog.data.blog_block.map((item, index) => {
       return (
-        <div className="mx-14 xl:mx-28">
+        <div key={index} className="mx-14 xl:mx-28">
             <PrismicNextImage field={item.image} className="xl:w-[1000px] mb-16"/>
             <PrismicRichText
             field={item.text}
             />
-            </div>
+        </div>
         );
       })}
       <p className="mt-24 border-t border-accent flex gap-4 text-accent text-xl font-bold">
